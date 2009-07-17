@@ -43,6 +43,7 @@ If you wanted to show the class tags also
 </pre>
 
 Output is as follow
+
 <pre>
 <table>
   <tr class="odd">
@@ -56,5 +57,6 @@ Output is as follow
   </tr>
 </table>
 </pre>
-p. Make sense?
+
+Make sense?
 
