@@ -55,6 +55,6 @@ Output is as follow
     <td>3</td>
   </tr>
 </table>
-/pre>
+</pre>
 p. Make sense?
 
