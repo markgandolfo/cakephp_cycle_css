@@ -4,6 +4,7 @@ Cylce Css is a helper that will output alternating text, its very usefull for do
 
 h3. So how do I use it?
 
+bc..
   <table>
    <? foreach(array(1,2,3) as $item) : ?>
       <tr class="<?= $cycle->css() ?>">
@@ -49,4 +50,6 @@ h3. So how do I use it?
       <td>3</td>
     </tr>
    </table>
+
+p. Make sense?
 
