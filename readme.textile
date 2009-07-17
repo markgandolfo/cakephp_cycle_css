@@ -5,52 +5,56 @@ Cylce Css is a helper that will output alternating text, its very usefull for do
 h3. So how do I use it?
 
 <pre>
-  <table>
-   <? foreach(array(1,2,3) as $item) : ?>
-      <tr class="<?= $cycle->css() ?>">
-        <td><?= $item ?></td>
-      </tr>
-   <? endforeach ?>
-  </table>
-
-  Output is as follow
-
-  <table>
-    <tr class="odd">
-     <td>1</td>
+<table>
+ <? foreach(array(1,2,3) as $item) : ?>
+    <tr class="<?= $cycle->css() ?>">
+      <td><?= $item ?></td>
     </tr>
-    <tr class="even">
-      <td>2</td>
-    </tr>
-    <tr class="odd">
-      <td>3</td>
-    </tr>
-   </table>
-
-
-  If you wanted to show the class tags also
-  <table>
-   <? foreach(array(1,2,3) as $item) : ?>
-      <tr <?= $cycle->css(array('odd','even'), true) ?>>
-        <td><?= $item ?></td>
-      </tr>
-   <? endforeach ?>
-  </table>
-
-  Output is as follow
-
-  <table>
-    <tr class="odd">
-     <td>1</td>
-    </tr>
-    <tr class="even">
-      <td>2</td>
-    </tr>
-    <tr class="odd">
-      <td>3</td>
-    </tr>
-   </table>
-
+ <? endforeach ?>
+</table>
 </pre>
+
+  Output is as follow
+
+<pre>
+<table>
+  <tr class="odd">
+   <td>1</td>
+  </tr>
+  <tr class="even">
+    <td>2</td>
+  </tr>
+  <tr class="odd">
+    <td>3</td>
+  </tr>
+ </table>
+</pre>
+
+If you wanted to show the class tags also
+
+<pre>
+<table>
+ <? foreach(array(1,2,3) as $item) : ?>
+    <tr <?= $cycle->css(array('odd','even'), true) ?>>
+      <td><?= $item ?></td>
+    </tr>
+ <? endforeach ?>
+</table>
+</pre>
+
+Output is as follow
+<pre>
+<table>
+  <tr class="odd">
+   <td>1</td>
+  </tr>
+  <tr class="even">
+    <td>2</td>
+  </tr>
+  <tr class="odd">
+    <td>3</td>
+  </tr>
+</table>
+/pre>
 p. Make sense?
 
